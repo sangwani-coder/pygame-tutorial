@@ -51,7 +51,8 @@ def checkGravity():
 def drawSquare():
     global squareColor, squareX, squareY, draggingSquare
     if draggingSquare == True:
-        squareColor = (0, 255, 0)
+        squareColor = (0, 255, 255)
+        print(mousePosition)
         squareX = mousePosition[0] - squareSize / 2
         squareY = mousePosition[1] - squareSize / 2
 

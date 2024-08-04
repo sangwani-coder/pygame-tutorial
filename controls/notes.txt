@@ -1,0 +1,37 @@
+Keyboard Control functions:
+
+
+Mouse control functions:
+
+checkBounds():
+has one job: to check whether or not our mouse position is within the bounds (edges) of our square
+
+checkGravity():
+looks at where our square is in the window: if it’s not on the bottom of our window, it will
+accelerate our square to there. However, it will only do this if we’ve let
+go of our mouse button, because we don’t want our shape to fall to the
+ground when we’re holding onto it.
+
+Based on the adjustments of checkBounds() and
+checkGravity(), drawSquare() will draw the squarefor us. If our
+square is being moved around by our mouse, it will draw the square at
+the mouse coordinates. But if we aren’t dragging the square around,
+it will draw a graceful gravity-driven descent back to the bottom of
+our window. drawSquare() has one little trick up its sleeve: as well
+as affecting the position of our square, it also changes its colour: red
+when not being dragged and green when being dragged. This code could
+be useful if, instead of a square, we had a character and we wanted to
+change its graphic to make it look like it was holding onto our cursor
+
+Conclusion
+We’ve learned that Pygame creates a list of events that occurred every
+time the frame is updated, and that we can work through them to
+check for events that we want to use. We learned that Pygame
+receives key codes when buttons are pressed, but has a big list of key
+code events that we can use so we don’t have to remember all of the
+numbers. We learned that we can get mouse events whenever we
+like, and that we can get coordinates of where the mouse is and which
+buttons are pressed. We’ve also learned how to simulate gravity and
+jumping, and we’ve made ourselves think about how things move
+in the real world too. Congratulations! We now have the beginnings
+of a real game.
